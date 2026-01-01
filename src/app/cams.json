@@ -1,0 +1,57 @@
+[
+  {
+    "id": "penguinCam",
+    "type": "video",
+    "name": "Penguin Cam",
+    "link": "https://zssd-penguin.hls.camzonecdn.com/CamzoneStreams/zssd-penguin/Playlist.m3u8"
+  },
+  {
+    "id": "giraffeRhinoCam",
+    "type": "video",
+    "name": "Giraffe & Rhino Cam",
+    "link": "https://zssd-kijami.hls.camzonecdn.com/CamzoneStreams/zssd-kijami/Playlist.m3u8",
+    "poster": "https://zssd-kijami.preview.api.camzonecdn.com/previewimage"
+  },
+  {
+    "id": "owlCam",
+    "type": "video",
+    "name": "Owl Aviary Cam",
+    "link": "https://zssd-owlaviary.hls.camzonecdn.com/CamzoneStreams/zssd-owlaviary/Playlist.m3u8"
+  },
+  {
+    "id": "platypusCam",
+    "type": "img",
+    "name": "Platypus Cam",
+    "link": "https://zssd-platypus2.preview.api.camzonecdn.com/previewimage"
+  },
+  {
+    "id": "tigerCam",
+    "type": "img",
+    "name": "Tiger Cam",
+    "link": "https://zssd-tiger.preview.api.camzonecdn.com/previewimage"
+  },
+  {
+    "id": "hippoCam",
+    "type": "video",
+    "name": "Hippo Cam",
+    "link": "https://zssd-hippo.hls.camzonecdn.com/CamzoneStreams/zssd-hippo/Playlist.m3u8"
+  },
+  {
+    "id": "apeCam",
+    "type": "video",
+    "name": "Ape Cam",
+    "link": "https://ape.hls.camzonecdn.com/CamzoneStreams/ape/Playlist.m3u8"
+  },
+  {
+    "id": "baboonCam",
+    "type": "video",
+    "name": "Baboon Cam",
+    "link": "https://zssd-baboon.hls.camzonecdn.com/CamzoneStreams/zssd-baboon/Playlist.m3u8"
+  },
+  {
+    "id": "koalaCam",
+    "type": "video",
+    "name": "Koala Cam",
+    "link": "https://zssd-koala.hls.camzonecdn.com/CamzoneStreams/zssd-koala/Playlist.m3u8"
+  }
+]
