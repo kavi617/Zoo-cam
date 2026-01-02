@@ -152,6 +152,32 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* GPU acceleration for better performance */
+.glass-panel,
+.glass-button,
+video,
+iframe {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Reduce repaints on hover */
+.group:hover {
+  will-change: transform, box-shadow;
+}
+
+/* Optimize animations */
+.animate-entrance {
+  will-change: transform, opacity;
+}
+
+/* Optimize video rendering */
+video {
+  object-fit: cover;
+  transform: translateZ(0);
+}
+
 /* Better focus states for accessibility */
 button:focus-visible,
 a:focus-visible {

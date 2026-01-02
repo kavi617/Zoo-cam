@@ -6,11 +6,53 @@
     "link": "https://zssd-penguin.hls.camzonecdn.com/CamzoneStreams/zssd-penguin/Playlist.m3u8"
   },
   {
+    "id": "wolongGrovePandaCam",
+    "type": "iframe",
+    "name": "Wolong Grove Panda Cam",
+    "link": "https://www.youtube.com/embed/3szkFHfr6sA?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  },
+  {
+    "id": "apeCam",
+    "type": "video",
+    "name": "Ape Cam",
+    "link": "https://ape.hls.camzonecdn.com/CamzoneStreams/ape/Playlist.m3u8"
+  },
+  {
+    "id": "tigerCam",
+    "type": "img",
+    "name": "Tiger Cam",
+    "link": "https://zssd-tiger.preview.api.camzonecdn.com/previewimage"
+  },
+  {
+    "id": "koalaCam",
+    "type": "video",
+    "name": "Koala Cam",
+    "link": "https://zssd-koala.hls.camzonecdn.com/CamzoneStreams/zssd-koala/Playlist.m3u8"
+  },
+  {
     "id": "giraffeRhinoCam",
     "type": "video",
     "name": "Giraffe & Rhino Cam",
     "link": "https://zssd-kijami.hls.camzonecdn.com/CamzoneStreams/zssd-kijami/Playlist.m3u8",
     "poster": "https://zssd-kijami.preview.api.camzonecdn.com/previewimage"
+  },
+  {
+    "id": "hippoCam",
+    "type": "video",
+    "name": "Hippo Cam",
+    "link": "https://zssd-hippo.hls.camzonecdn.com/CamzoneStreams/zssd-hippo/Playlist.m3u8"
+  },
+  {
+    "id": "baboonCam",
+    "type": "video",
+    "name": "Baboon Cam",
+    "link": "https://zssd-baboon.hls.camzonecdn.com/CamzoneStreams/zssd-baboon/Playlist.m3u8"
+  },
+  {
+    "id": "redPandas",
+    "type": "iframe",
+    "name": "Red Pandas",
+    "link": "https://www.youtube.com/embed/EgGoouuVRRs?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   },
   {
     "id": "owlCam",
@@ -25,33 +67,63 @@
     "link": "https://zssd-platypus2.preview.api.camzonecdn.com/previewimage"
   },
   {
-    "id": "tigerCam",
-    "type": "img",
-    "name": "Tiger Cam",
-    "link": "https://zssd-tiger.preview.api.camzonecdn.com/previewimage"
+    "id": "AfricanAnimalLookout",
+    "type": "iframe",
+    "name": "African Animal Lookout",
+    "link": "https://www.youtube.com/embed/O8xVFhgEv6Q?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   },
   {
-    "id": "hippoCam",
-    "type": "video",
-    "name": "Hippo Cam",
-    "link": "https://zssd-hippo.hls.camzonecdn.com/CamzoneStreams/zssd-hippo/Playlist.m3u8"
+    "id": "bisonWaterHole",
+    "type": "iframe",
+    "name": "Bison Water Hole",
+    "link": "https://www.youtube.com/embed/tJ0fHAHihPA?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   },
   {
-    "id": "apeCam",
-    "type": "video",
-    "name": "Ape Cam",
-    "link": "https://ape.hls.camzonecdn.com/CamzoneStreams/ape/Playlist.m3u8"
+    "id": "alligatorSpoonbillSwamp",
+    "type": "iframe",
+    "name": "Alligator & Spoonbill Swamp",
+    "link": "https://www.youtube.com/embed/M4P_GzA6H80?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   },
   {
-    "id": "baboonCam",
-    "type": "video",
-    "name": "Baboon Cam",
-    "link": "https://zssd-baboon.hls.camzonecdn.com/CamzoneStreams/zssd-baboon/Playlist.m3u8"
+    "id": "texasWildlife",
+    "type": "iframe",
+    "name": "Texas Wildlife",
+    "link": "https://www.youtube.com/embed/Jng6h2xYapk?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   },
   {
-    "id": "koalaCam",
-    "type": "video",
-    "name": "Koala Cam",
-    "link": "https://zssd-koala.hls.camzonecdn.com/CamzoneStreams/zssd-koala/Playlist.m3u8"
+    "id": "belugaBoatUnderwater",
+    "type": "iframe",
+    "name": "Beluga Boat Underwater",
+    "link": "https://www.youtube.com/embed/MthQzTUrMLs?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1&start=14"
+  },
+  {
+    "id": "tropicalReef",
+    "type": "iframe",
+    "name": "Tropical Reef",
+    "link": "https://www.youtube.com/embed/DHUnz4dyb54?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  },
+  {
+    "id": "zeab'sDen",
+    "type": "iframe",
+    "name": "Zeab's Den",
+    "link": "https://www.youtube.com/embed/QFQF6AH1eb0?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  },
+  {
+    "id": "Anan Wildlife Observatory ",
+    "type": "iframe",
+    "name": "Anan Wildlife Observatory ",
+    "link": "https://www.youtube.com/embed/2360fnKZcIQ?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  },
+  {
+    "id": "slothCam",
+    "type": "iframe",
+    "name": "Sloth Cam",
+    "link": "https://www.youtube.com/embed/g_L1Ay8P244?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  },
+  {
+    "id": "nationalWildlifeRefuge",
+    "type": "iframe",
+    "name": "National Wildlife Refuge",
+    "link": "https://www.youtube.com/embed/DB4LDyWHawY?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   }
 ]

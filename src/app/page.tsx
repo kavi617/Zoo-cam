@@ -110,27 +110,37 @@ export default function Home() {
           <div
             key={cam.id}
             onClick={() => setFullscreenIdx(idx)}
-            className="group glass-panel rounded-3xl overflow-hidden cursor-pointer relative h-64 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(241,191,152,0.25)] animate-entrance border border-transparent hover:border-zoo-primary/30"
-            style={{ animationDelay: `${idx * 100}ms` }}
+            className="group glass-panel rounded-3xl overflow-hidden cursor-pointer relative h-64 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(241,191,152,0.25)] animate-entrance border border-transparent hover:border-zoo-primary/30"
+            style={{ animationDelay: `${idx * 50}ms` }}
           >
             {/* Media Layer */}
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500">
               {cam.type === "video" ? (
                 <VideoWithFallback src={cam.link} poster={cam.poster} name={cam.name} />
               ) : cam.type === "img" ? (
-                <Image src={cam.link} alt={cam.name} fill className="object-cover transition-transform duration-700 group-hover:scale-105" unoptimized />
+                <Image 
+                  src={cam.link} 
+                  alt={cam.name} 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                  loading="lazy"
+                  unoptimized 
+                />
               ) : cam.type === "iframe" ? (
-                <iframe src={cam.link} title={cam.name} className="w-full h-full border-none pointer-events-none" />
+                <iframe 
+                  src={cam.link.includes('mute=') ? cam.link : `${cam.link}${cam.link.includes('?') ? '&' : '?'}mute=1`}
+                  title={cam.name} 
+                  className="w-full h-full border-none pointer-events-none"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen={false}
+                />
               ) : null}
             </div>
 
             {/* Gradient Overlay for Text - Enhanced */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
 
-            {/* Shimmer effect on hover */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
-            </div>
 
             {/* Content Layer */}
             <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between z-10">
@@ -138,7 +148,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className={`w-2.5 h-2.5 rounded-full ${cam.type === 'video' ? 'bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]' : 'bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.6)]'}`}></span>
                   <span className="text-[10px] uppercase tracking-widest font-bold text-white/90 drop-shadow-sm">
-                    {cam.type === 'video' ? 'Live Feed' : 'Snapshot'}
+                    {cam.type === 'video' ? 'Live Feed' : cam.type === 'iframe' ? 'YouTube' : 'Video'}
                   </span>
                 </div>
                 <h3 className="font-display text-xl font-bold text-white group-hover:text-zoo-primary transition-all duration-300 drop-shadow-lg group-hover:drop-shadow-[0_0_12px_rgba(241,191,152,0.6)]">
@@ -201,7 +211,13 @@ export default function Home() {
                   <Image src={activeCam.link} alt={activeCam.name} fill className="object-contain" unoptimized />
                 </div>
               ) : activeCam.type === "iframe" ? (
-                <iframe src={activeCam.link} title={activeCam.name} className="w-full h-full border-none" />
+                <iframe 
+                  src={activeCam.link.includes('mute=') ? activeCam.link : `${activeCam.link}${activeCam.link.includes('?') ? '&' : '?'}mute=1`}
+                  title={activeCam.name} 
+                  className="w-full h-full border-none"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen={false}
+                />
               ) : null}
             </div>
           </div>
