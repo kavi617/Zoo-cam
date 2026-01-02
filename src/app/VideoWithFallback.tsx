@@ -13,7 +13,7 @@ export function VideoWithFallback({ src, poster, nightVisionClass = "", name }: 
   const [retryCount, setRetryCount] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const retryTimeoutRef = useRef<NodeJS.Timeout>();
+  const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const maxRetries = 5;
   const retryDelay = 3000; // 3 seconds
