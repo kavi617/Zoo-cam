@@ -32,6 +32,34 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ToastProvider>{children}</ToastProvider>
+        {/* Statcounter Code Start */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `var sc_project=13213842; var sc_invisible=1; var sc_security=\"affb61dc\";`,
+          }}
+        />
+        <script
+          src="https://www.statcounter.com/counter/counter.js"
+          async
+        />
+        <noscript>
+          <div className="statcounter">
+            <a
+              title="free hit counter"
+              href="https://statcounter.com/"
+              target="_blank"
+            >
+              <img
+                className="statcounter"
+                src="https://c.statcounter.com/13213842/0/affb61dc/1/"
+                alt="free hit counter"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </a>
+          </div>
+        </noscript>
+        <a href="https://statcounter.com/p13213842/?guest=1">View My Stats</a>
+        {/* Statcounter Code End */}
       </body>
     </html>
   );

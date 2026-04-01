@@ -11,7 +11,7 @@ We will stick to the earthy tones but apply them with more sophistication (trans
 - **Text**: Frosted Mint (`#e1f4cb`) and White.
 
 ## Typography
-- **Headings**: `Outfit` (Modern, geometric, friendly).
+- **Headings**: `Outfit` (Modern, geomet    ric, friendly).
 - **Body**: `Inter` (Clean, legible).
 
 ## Component Updates
